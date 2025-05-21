@@ -1,0 +1,285 @@
+.productPage {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.imageGallery {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mainImage:hover {
+  cursor: zoom-in;
+}
+
+.thumbnailContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.thumbnail:hover,
+.activeThumbnail {
+  border-color: #f88216;
+}
+
+.productDetails {
+  flex: 1;
+  min-width: 300px;
+}
+
+.productName {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.productPrice {
+  font-size: 1.8rem;
+  color: #f88216;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stock {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.quantityButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.quantityButton:hover {
+  background-color: #e0e0e0;
+}
+
+.quantityInput {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.addToCartButton {
+  background-color: #f88216;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  background-color: transparent;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.tabButton:hover {
+  color: #f88216;
+}
+
+.activeTab {
+  background: transparent;
+  color: #f88216;
+  border: none;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 3px solid #f88216;
+}
+
+.tabContent p,
+.tabContent li {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.tabContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabContent li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .productGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageGallery,
+  .productDetails {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mainImage {
+    padding-bottom: 60%;
+  }
+
+  .productName {
+    font-size: 1.8rem;
+  }
+
+  .productPrice {
+    font-size: 1.5rem;
+  }
+
+  .addToCartButton {
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .productPage {
+    padding: 20px 0;
+  }
+
+  .productGrid,
+  .reviewsSection {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .thumbnailContainer {
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productName {
+    font-size: 1.5rem;
+  }
+
+  .productPrice {
+    font-size: 1.3rem;
+  }
+
+  .quantityButton {
+    padding: 6px 12px;
+    font-size: 1rem;
+  }
+
+  .quantityInput {
+    width: 50px;
+    padding: 6px;
+  }
+
+  .addToCartButton {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .tabButton {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,153 @@
+.quotation {
+  margin-top: 36px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+}
+
+.quotation h3 {
+  margin-bottom: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playBtn {
+  width: 180px;
+  height: 100.62px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 13px;
+}
+
+.quotationText {
+  max-width: 481px;
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 11px;
+  padding-top: 11px;
+  border-top: 1px solid #e0e0e0;
+  gap: 15px;
+}
+
+.statistics h4 {
+  margin-bottom: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.statistics h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.review {
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding: 17px 23px;
+}
+
+.reviewHeader {
+  display: flex;
+  gap: 22px;
+}
+
+.review h5 {
+  margin-bottom: 3px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.review p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.review h6 {
+  margin-top: 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .quotationText {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .row {
+    justify-content: center;
+  }
+
+  .quotationText {
+    max-width: calc(100% - 200px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .playBtn {
+    margin: auto;
+  }
+
+  .quotationText {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,257 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.topCategoriesSection {
+  flex: 1;
+  border-radius: 10px;
+  padding: 11px;
+  max-width: 211px;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.topCategoriesTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.topCategoriesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoryItem {
+  margin-bottom: 16px;
+}
+
+.categoryItem a {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+  width: 100%;
+}
+
+.categoryItem a img {
+  margin-right: 13px;
+}
+
+.viewAllCategoriesButton {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #ff6600;
+}
+
+.heroMiddle {
+  flex: 2;
+}
+
+.heroBannerSection {
+  flex: 2.5;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 359px;
+  width: 100%;
+  max-width: 589px;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sourceProductsBox,
+.searchingProductBox {
+  width: 246px;
+  height: 163px;
+  border-radius: 5px;
+  padding: 29px 19px;
+}
+
+.sourceProductsBox {
+  background: url(/images/dsdsd.png) no-repeat;
+  background-size: cover;
+}
+
+.searchingProductBox {
+  background: url(/images/dadad.png) no-repeat;
+  background-size: cover;
+}
+
+.sourceProductsText,
+.searchingProductText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.exploreSellerListButton {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #265c81;
+  border: 0.5px solid #000000;
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: transparent;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.moreServicesSection {
+  margin-top: 40px;
+}
+
+.moreServicesTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.moreServicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.serviceBox {
+  flex: 1;
+  padding: 11px 17px 9px;
+  max-width: 200px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position: relative;
+  height: 100px;
+}
+
+.serviceImageWrapper {
+  position: absolute;
+  right: 0;
+}
+
+.serviceBoxContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.serviceTitle {
+  max-width: 100px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.serviceLink {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f88216;
+  text-decoration: none;
+  display: flex;
+  justify-self: start;
+}
+
+.serviceLink p {
+  margin: auto 0;
+  margin-right: 5px;
+}
+
+.serviceLink img {
+  margin: auto 0;
+}
+
+@media (max-width: 1200px) {
+  .serviceBox {
+    min-width: auto;
+    flex: 1;
+  }
+
+  .serviceBox .serviceImageWrapper {
+    width: 50px;
+    height: 100%;
+    right: -5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroMiddle .row {
+    flex-direction: column;
+  }
+  .rightSection {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .moreServicesGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .serviceBox {
+    min-width: 48%;
+    flex: 1;
+  }
+
+  .sourceProductsBox,
+  .searchingProductBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .topCategoriesSection {
+    display: none;
+  }
+
+  .moreServicesGrid {
+    grid-template-columns: 1fr;
+  }
+  .serviceBox {
+    flex: 1;
+    min-width: 100%;
+  }
+  .rightSection {
+    flex-direction: column;
+  }
+}

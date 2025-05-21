@@ -1,0 +1,114 @@
+.card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e9eced;
+  border-radius: 8px;
+  padding: 11px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 132px;
+}
+
+.card h4 {
+  margin-bottom: 3px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.card p {
+  margin-bottom: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.card button {
+  background: #6c63ff;
+  border-radius: 5px;
+  border: none;
+  padding: 6px 7px;
+  display: flex;
+  margin: auto 0;
+}
+
+.card button span {
+  margin: auto;
+  margin-right: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.card button img {
+  margin: auto;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store {
+  margin: auto 0;
+}
+
+.store img {
+  margin-right: 5px;
+}
+
+.store p {
+  margin: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carouselBtn {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.carouselBtn button {
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.nextBtn {
+  right: -15px !important;
+}
+
+.prevBtn {
+  left: -15px !important;
+}
